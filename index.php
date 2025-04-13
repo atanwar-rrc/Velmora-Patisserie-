@@ -1,4 +1,7 @@
-<?php include_once('TopBar.php') ?>
+<?php 
+include_once('getConnection.php');
+include_once('TopBar.php');
+?>
 <!-- Hero Section -->
 <section id="hero" class="hero section light-background">
 
@@ -43,7 +46,7 @@
                         <div class="icon-box d-flex flex-column justify-content-center align-items-center">
                             <i class="bi bi-clipboard-data"></i>
                             <h4>Variety of Products 🍰</h4>
-                            <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                            <p>Endless variety, one sweet destination.</p>
                         </div>
                     </div><!-- End Icon Box -->
 
@@ -51,7 +54,7 @@
                         <div class="icon-box d-flex flex-column justify-content-center align-items-center">
                             <i class="bi bi-gem"></i>
                             <h4>Premium Quality ✅</h4>
-                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                            <p>From classic to custom quality is our promise.</p>
                         </div>
                     </div><!-- End Icon Box -->
 
@@ -59,7 +62,7 @@
                         <div class="icon-box d-flex flex-column justify-content-center align-items-center">
                             <i class="bi bi-inboxes"></i>
                             <h4>Custom Creations ⭐</h4>
-                            <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                            <p>From sketch to slice every cake tells your story</p>
                         </div>
                     </div><!-- End Icon Box -->
                 </div>
