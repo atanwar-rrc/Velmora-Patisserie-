@@ -236,7 +236,7 @@
 }
 
 /* new user link */
-.new-user-link{
+.new-user-link {
   position: absolute;
   bottom: 8px;
   right: 40px;
@@ -621,7 +621,6 @@
   margin-left: 5px;
 }
 
-
 /* The design is inspired from Galahhad*/
 
 .popup {
@@ -820,4 +819,469 @@
   transform: scale(var(--nav-active-scale));
   visibility: visible;
   opacity: 1;
+}
+
+/* product css */
+
+.cake-font {
+  font-family: "Courier New", Courier, monospace !important;
+  font-weight: 600 !important;
+}
+.cake-price {
+  font-family: "Courier New", Courier, monospace !important;
+}
+
+.product-card {
+  background-color: #fff;
+  padding: 1em;
+  box-shadow: 0 5px 5px #e1e1e1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.product-card img {
+  max-width: 100%;
+}
+.product-card h4 {
+  font-size: 1.3em;
+  margin: 0.5em 0;
+}
+.product-card div {
+  font-size: 1.2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 576px) {
+  .product-card {
+    font-size: 0.9em;
+  }
+}
+
+/* view buttton */
+.view-botton {
+  border: none;
+  width: 140px;
+  height: 50px;
+  color: #fff;
+  z-index: 1;
+  display: flex;
+  background: #000;
+  position: relative;
+  cursor: pointer;
+}
+
+.view-botton p {
+  margin: 0 auto;
+  align-self: center;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.view-botton::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  z-index: -1;
+  height: 10%;
+  bottom: 0;
+  clip-path: polygon(
+    0% 74%,
+    4% 75%,
+    8% 76%,
+    11% 77%,
+    15% 78%,
+    20% 78%,
+    25% 77%,
+    32% 77%,
+    37% 75%,
+    40% 74%,
+    43% 74%,
+    46% 73%,
+    52% 72%,
+    57% 72%,
+    65% 74%,
+    66% 75%,
+    71% 78%,
+    75% 82%,
+    81% 86%,
+    83% 88%,
+    88% 91%,
+    90% 94%,
+    94% 96%,
+    98% 98%,
+    100% 100%,
+    82% 100%,
+    0 100%
+  );
+  background: #8792eb;
+  transition: 0.2s ease;
+}
+
+.view-botton::before {
+  position: absolute;
+  content: "";
+  transform: rotate(180deg);
+  width: 100%;
+  height: 10%;
+  transition: 0.2s ease;
+  z-index: -1;
+  clip-path: polygon(
+    0% 74%,
+    4% 75%,
+    8% 76%,
+    11% 77%,
+    15% 78%,
+    20% 78%,
+    25% 77%,
+    32% 77%,
+    37% 75%,
+    40% 74%,
+    43% 74%,
+    46% 73%,
+    52% 72%,
+    57% 72%,
+    65% 74%,
+    66% 75%,
+    71% 78%,
+    75% 82%,
+    81% 86%,
+    83% 88%,
+    88% 91%,
+    90% 94%,
+    94% 96%,
+    98% 98%,
+    100% 100%,
+    82% 100%,
+    0 100%
+  );
+  background: #8792eb;
+}
+
+.view-botton:hover::after {
+  clip-path: polygon(
+    0 30%,
+    9% 34%,
+    7% 39%,
+    11% 43%,
+    13% 33%,
+    17% 30%,
+    24% 34%,
+    25% 35%,
+    30% 31%,
+    30% 38%,
+    39% 33%,
+    35% 43%,
+    43% 45%,
+    55% 46%,
+    65% 74%,
+    67% 66%,
+    81% 57%,
+    75% 82%,
+    81% 86%,
+    83% 88%,
+    88% 91%,
+    90% 94%,
+    94% 96%,
+    98% 98%,
+    100% 100%,
+    82% 100%,
+    0 100%
+  );
+  height: 80%;
+}
+
+.view-botton:hover::before {
+  clip-path: polygon(
+    0 30%,
+    9% 34%,
+    7% 39%,
+    11% 43%,
+    13% 33%,
+    17% 30%,
+    24% 34%,
+    25% 35%,
+    30% 31%,
+    30% 38%,
+    39% 33%,
+    35% 43%,
+    43% 45%,
+    55% 46%,
+    65% 74%,
+    67% 66%,
+    81% 57%,
+    75% 82%,
+    81% 86%,
+    83% 88%,
+    88% 91%,
+    90% 94%,
+    94% 96%,
+    98% 98%,
+    100% 100%,
+    82% 100%,
+    0 100%
+  );
+  height: 80%;
+}
+
+/* Search button */
+.button {
+  width: 110px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  background-color: rgb(161, 255, 20);
+  border-radius: 30px;
+  color: rgb(19, 19, 19);
+  font-weight: 600;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
+  padding-left: 8px;
+  transition-duration: 0.5s;
+}
+
+.svgIcon {
+  height: 25px;
+  transition-duration: 1.5s;
+}
+
+.bell path {
+  fill: rgb(19, 19, 19);
+}
+
+.button:hover {
+  background-color: rgb(192, 255, 20);
+  transition-duration: 0.5s;
+}
+
+.button:active {
+  transform: scale(0.97);
+  transition-duration: 0.2s;
+}
+
+.button:hover .svgIcon {
+  transform: rotate(250deg);
+  transition-duration: 1.5s;
+}
+
+/* cake not found animation */
+/* Container for sad boy and cake */
+.sad-boy-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sad-boy-img {
+  width: 100px;
+  animation: sadBoyAnimation 3s ease-in-out infinite;
+}
+
+.cake-img {
+  position: absolute;
+  width: 120px;
+  bottom: 10px;
+  opacity: 0.8;
+  animation: cakeBounce 2s ease-in-out infinite;
+}
+
+/* Sad boy looking at the cake animation */
+@keyframes sadBoyAnimation {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+}
+
+/* single product display */
+.view-product .card {
+  background: linear-gradient(135deg, #fff, #f9f9f9);
+}
+
+.view-product img {
+  max-width: 90%;
+  transition: transform 0.3s ease;
+}
+
+.view-product img:hover {
+  transform: scale(1.05);
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: #6c757d;
+}
+
+/* commets */
+.card {
+  width: 450px;
+  height: fit-content;
+  background-color: white;
+  box-shadow: 0px 187px 75px rgba(0, 0, 0, 0.01),
+    0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09),
+    0px 12px 26px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 17px 17px 27px 27px;
+}
+
+.title {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  border-bottom: 1px solid #f1f1f1;
+  font-weight: 700;
+  font-size: 13px;
+  color: #47484b;
+}
+
+.title::after {
+  content: "";
+  width: 8ch;
+  height: 1px;
+  position: absolute;
+  bottom: -1px;
+  background-color: #47484b;
+}
+
+.comments {
+  display: grid;
+  grid-template-columns: 35px 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.comment-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.comment-container .user {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 10px;
+}
+
+.comment-container .user .user-pic {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f1f1;
+  border-radius: 50%;
+}
+
+.comment-container .user .user-pic:after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  border-radius: 50%;
+  background-color: #0fc45a;
+  border: 2px solid #ffffff;
+}
+
+.comment-container .user .user-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 3px;
+}
+
+.comment-container .user .user-info span {
+  font-weight: 700;
+  font-size: 12px;
+  color: #47484b;
+}
+
+.comment-container .user .user-info p {
+  font-weight: 600;
+  font-size: 10px;
+  color: #acaeb4;
+}
+
+.comment-container .comment-content {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #5f6064;
+}
+
+.text-box {
+  width: 100%;
+  height: fit-content;
+  background-color: #f1f1f1;
+  padding: 8px;
+}
+
+.text-box .box-container {
+  background-color: #ffffff;
+  border-radius: 21px;
+  padding: 8px;
+}
+
+.comment-name {
+  width: 100%;
+  resize: none;
+  border: 0;
+  border-radius: 6px;
+  padding: 12px 12px 10px 12px;
+  font-size: 13px;
+  outline: none;
+  caret-color: #0a84ff;
+}
+
+.text-box textarea {
+  width: 100%;
+  height: 100px;
+  resize: none;
+  border: 0;
+  border-radius: 6px;
+  padding: 12px 12px 10px 12px;
+  font-size: 13px;
+  outline: none;
+  caret-color: #0a84ff;
+}
+
+.text-box .formatting {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto 1fr;
+}
+
+.text-box .formatting button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 0;
+  padding: 5px;
+  color: white;
+  outline: none;
+}
+.text-box .formatting .send {
+  background-color: #0a84ff;
+}
+
+.text-box .formatting .send:hover {
+  background-color: #026eda;
 }
